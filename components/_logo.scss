@@ -1,0 +1,25 @@
+.brand {
+  position: absolute;
+  top: 3px;
+  left: 50px;
+  z-index: 2;
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px;
+  //filter: invert(1);
+  //filter: hue-rotate(90deg);
+  filter: sepia(60%);
+
+  &-logo {
+    height: 100%;
+    width: 100%;
+
+    img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.btn {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: all .4s;
+  z-index: 3;
+  line-height: 45px; }
+
+.nav-btn {
+  position: absolute;
+  top: -70px;
+  right: 0; }
+
+.main-btn {
+  color: #b70b10;
+  background-color: transparent;
+  border: 2px solid #b70b10; }
+  .main-btn:hover {
+    background-color: #b70b10;
+    color: #fff; }
+
+.sub-btn {
+  color: #262626;
+  background-color: #fff;
+  border: 2px solid #262626; }
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0); }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 red; } }
+.brand {
+  position: absolute;
+  top: 3px;
+  left: 50px;
+  z-index: 2;
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px;
+  filter: sepia(60%); }
+  .brand-logo {
+    height: 100%;
+    width: 100%; }
+    .brand-logo img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+
+.footer {
+  position: relative;
+  height: 15vh;
+  width: 100vw;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 50px 10px 50px;
+  margin-top: 20px; }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .footer-content .footer-social-media-heading {
+      color: #b70b10; }
+    .footer-content .footer-social-media-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none; }
+      .footer-content .footer-social-media-icons .social-media-item:not(:first-of-type) {
+        padding: 10px; }
+      .footer-content .footer-social-media-icons .social-media-link {
+        color: white;
+        font-size: 20px; }
+        .footer-content .footer-social-media-icons .social-media-link:hover {
+          font-size: 22px;
+          color: #b70b10; }
+  .footer .footer-contacts-heading {
+    color: #b70b10; }
+  .footer .footer-contacts-phone {
+    padding: 10px 0 10px 0;
+    text-align: right; }
+  .footer .footer-copyright-paragraph {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px; }
+
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: sans-serif; }
+
+.header {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg) center no-repeat;
+  background-size: cover;
+  font-family: sans-serif; }
+  .header-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #b70b10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 200px;
+    padding: 20px; }
+    .header-banner button {
+      position: absolute;
+      bottom: 0; }
+  .header .sub-heading {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 0;
+    margin-top: 10px; }
+
+.nav {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-family: sans-serif;
+  width: max-content;
+  margin: 60px 40px 40px 40px; }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav-item {
+    padding: 10px 40px;
+    list-style: none;
+    transition: .2s; }
+    .nav-item:hover {
+      background-color: #b70b10; }
+    .nav-item-active:hover {
+      color: #b70b10; }
+  .nav-link {
+    text-decoration: none;
+    color: #fff; }
+
+.specials {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  margin: 30px 0;
+  padding: 0 50px; }
+  .specials .cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .specials .cards-wrapper .card {
+      position: relative;
+      width: 33.3%;
+      height: 33%;
+      margin: 5px;
+      transition: all .2s; }
+      .specials .cards-wrapper .card:hover .card-overlay {
+        background-color: transparent;
+        transform: scale(1.2); }
+      .specials .cards-wrapper .card:hover .card-overlay .sub-btn {
+        background-color: black;
+        color: #fff;
+        opacity: 1; }
+      .specials .cards-wrapper .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        transition: all .1s; }
+      .specials .cards-wrapper .card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+
+.gallery {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px; }
+  .gallery-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 60vw;
+    margin: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    font-family: sans-serif; }
+    .gallery-heading-sub {
+      letter-spacing: 1px;
+      margin-bottom: 25px; }
+    .gallery-heading-main {
+      text-transform: uppercase;
+      color: #b70b10; }
+  .gallery .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px; }
+    .gallery .cards-wrapper .card {
+      position: relative;
+      width: 30%;
+      height: 45%;
+      box-shadow: 0 0 1px black; }
+      .gallery .cards-wrapper .card:hover .card-overlay {
+        background-color: black;
+        color: #fff; }
+      .gallery .cards-wrapper .card-overlay {
+        color: deeps #262626;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        transition: all 1s; }
+        .gallery .cards-wrapper .card-overlay-image {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-20%, -50%) rotate(25deg);
+          height: 120px !important;
+          width: 120px !important;
+          z-index: 2;
+          border-radius: 50%; }
+      .gallery .cards-wrapper .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }

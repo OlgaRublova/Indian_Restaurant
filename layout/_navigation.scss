@@ -1,0 +1,39 @@
+.nav {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-family: sans-serif;
+  width: max-content;
+  margin: 60px 40px 40px 40px;
+
+
+
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-item {
+    padding: 10px 40px;
+    list-style: none;
+    transition: .2s;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    &-active {
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,48 @@
+.btn {
+  width: 170px;
+  height: 45px;
+  font-family: $font-josefinSans;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: all .4s;
+  z-index: 3;
+  line-height: 45px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+
+.main-btn {
+  color: $color-primary;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.sub-btn {
+  color: $color-dark;
+  background-color: $color-white;
+  border: 2px solid $color-dark;
+}
+
+
+// Animate the size, outside
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 $color-pulse; }
+}
