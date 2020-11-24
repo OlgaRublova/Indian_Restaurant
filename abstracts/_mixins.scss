@@ -1,0 +1,36 @@
+@mixin main-heading{
+  background-color: #460B2F;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: lighter;
+  font-family: $font-heading;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+@mixin flexLayout{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin footerFlexLayout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 100%;
+}
+
+@mixin footerHeading{
+  color: $color-footer-heading;
+  text-transform: capitalize;
+}
+@mixin footerText{
+  color: $color-footer-link;
+  font-size: 0.8rem;
+
+}

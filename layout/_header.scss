@@ -8,11 +8,9 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1;
-  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)), url(../images/bg.jpeg) center no-repeat;
+  background: linear-gradient(rgba($color-dark, 0.5), rgba($color-dark, 0.5)), url(../images/bg-5.jpg) center no-repeat;
   background-size: cover;
   font-family: sans-serif;
-
-
 
   &-banner {
     position: absolute;
@@ -31,13 +29,7 @@
     align-items: center;
     justify-content: flex-start;
     height: 200px;
-    //border: 2px solid deepskyblue;
     padding: 20px;
-
-    button{
-      position: absolute;
-      bottom: 0;
-    }
   }
 
   .sub-heading {
@@ -46,5 +38,9 @@
     font-weight: lighter;
     letter-spacing: 0;
     margin-top: 10px;
+  }
+  .main-heading{
+    @include main-heading;
+
   }
 }

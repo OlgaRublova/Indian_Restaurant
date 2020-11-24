@@ -16,16 +16,19 @@
   position: absolute;
   top: -70px;
   right: 0;
+  &:hover{
+    background-color: $color-btn-nav-hover;
+  }
 }
 
 .main-btn {
-  color: $color-primary;
+  color: $color-btn-main;
   background-color: transparent;
-  border: 2px solid $color-primary;
+  border: 2px solid $color-btn-main;
 
   &:hover {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $color-btn-main;
+    color: $color-btn-main-secondary;
   }
 }
 
