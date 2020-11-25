@@ -11,6 +11,12 @@
 .margin-top-md {
   margin-top: 4rem !important; }
 
+.margin-top-sm {
+  margin-top: 2rem !important; }
+
+.margin-bottom-sm {
+  margin-bottom: 4rem !important; }
+
 .btn {
   width: 170px;
   height: 45px;
@@ -73,6 +79,8 @@
 
 .footer {
   position: relative;
+  top: 0;
+  left: 0;
   height: 15vh;
   width: 100vw;
   background-color: #460B2F;
@@ -151,7 +159,7 @@
   top: 0;
   right: 0;
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,7 +173,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #E36414;
+    color: #9A031E;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
@@ -191,7 +199,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: max-content;
+    margin-bottom: 1rem; }
 
 .nav {
   position: absolute;
@@ -210,9 +220,9 @@
     list-style: none;
     transition: .2s; }
     .nav-item:hover {
-      background-color: #E36414; }
+      background-color: #9A031E; }
     .nav-item-active:hover {
-      color: #E36414; }
+      color: #9A031E; }
   .nav-link {
     text-decoration: none;
     color: #fff; }
@@ -287,7 +297,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: max-content;
+      margin-bottom: 1rem; }
   .gallery .cards-wrapper {
     display: flex;
     justify-content: space-between;
@@ -332,6 +344,8 @@
   top: 0;
   right: 0;
   width: 100vw;
+  height: 100vh;
+  height: min-content;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column; }
@@ -357,7 +371,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: max-content;
+    margin-bottom: 1rem; }
   .about-img-wrapper {
     height: 40rem;
     width: 30rem;
@@ -370,3 +386,160 @@
   .about-text {
     font-size: 1.1rem;
     text-align: justify; }
+
+.contact-us {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  height: min-content;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 110vh; }
+  .contact-us__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40%; }
+    .contact-us__cards .card {
+      background-color: lavenderblush;
+      height: 100%;
+      width: 50%;
+      color: black;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      font-family: "Hind Guntur", sans-serif;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .contact-us__cards .card__img-wrapper {
+        height: 100%;
+        width: 100%; }
+        .contact-us__cards .card__img-wrapper img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      .contact-us__cards .card__content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column; }
+        .contact-us__cards .card__content .heading--main {
+          color: #460B2F;
+          font-size: 1.3rem;
+          margin-bottom: 1rem; }
+        .contact-us__cards .card__content .heading--sub {
+          font-size: 1rem; }
+  .contact-us__text {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; }
+    .contact-us__text .text__heading-main {
+      color: #460B2F;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 3rem 0;
+      font-family: "Hind Guntur", sans-serif;
+      font-size: 2rem;
+      background-color: lavenderblush;
+      width: max-content;
+      padding: 5px 10px;
+      font-weight: lighter;
+      margin: 3rem 0 0.5rem 0; }
+  .contact-us__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0; }
+    .contact-us__heading--main {
+      background-color: #460B2F;
+      padding: 1rem 2rem;
+      color: white;
+      font-weight: lighter;
+      font-family: "Hind Guntur", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      width: max-content;
+      margin-bottom: 1rem; }
+      .contact-us__heading--main:nth-of-type(2) {
+        background-color: #9A031E; }
+
+.menu {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  height: min-content;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hind Guntur", sans-serif;
+  height: min-content; }
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .menu__wrapper__box {
+      width: 47%;
+      height: 100%;
+      background-color: lavenderblush;
+      display: grid;
+      grid-auto-rows: minmax(min-content, 100px);
+      grid-column-gap: 2rem;
+      grid-row-gap: 0.1rem;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1rem; }
+      .menu__wrapper__box .product-section__heading {
+        background-color: #460B2F;
+        padding: 1rem 2rem;
+        color: white;
+        font-weight: lighter;
+        font-family: "Hind Guntur", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        width: max-content;
+        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        font-size: 1rem;
+        line-height: 1rem; }
+      .menu__wrapper__box .product-section__info {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #9A031E;
+        margin: 1rem 0 0.5rem 0; }
+        .menu__wrapper__box .product-section__info__name {
+          font-size: 0.95rem; }
+        .menu__wrapper__box .product-section__info__price {
+          font-size: 0.95rem; }
+      .menu__wrapper__box .product-section .product-description {
+        font-size: 0.95rem; }
+      .menu__wrapper__box .product-section .product-img {
+        margin-top: 1rem;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 9; }
+        .menu__wrapper__box .product-section .product-img img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain; }

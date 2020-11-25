@@ -2,8 +2,8 @@ $color-dark: #262626;
 $color-black: #000;
 
 $color-primary: #9A031E;
-$color-primary: #FB8B24;
-$color-primary: #E36414;
+//$color-primary: #FB8B24;
+//$color-primary: #E36414;
 
 $color-secondary: #bbb;
 
@@ -14,8 +14,17 @@ $color-white: #fff;
 $color-bg: whitesmoke;
 
 
-//buttons' colors
+//menu
+$color-menu-bg: $color-bg-heading;
+$color-menu-price: $color-primary;
+$color-menu-product-desc:$color-heading;
 
+//about
+
+
+//contact-us
+
+//buttons' colors
 $color-btn-main: #E36414;
 $color-btn-main: #FB8B24;
 $color-btn-main-secondary: #262626;
@@ -23,10 +32,12 @@ $color-btn-nav-hover: #460B2F;
 $color-pulse: #FB8B24;
 
 
+//footer
 $color-footer-heading:$color-white;
 $color-footer-bg:#460B2F;
 $color-footer-link: $color-btn-main;
 
 
+//fonts
 $font-josefinSans: 'Josefin Sans', sans-serif;
 $font-heading: 'Hind Guntur', sans-serif;

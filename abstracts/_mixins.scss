@@ -10,12 +10,38 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  width: max-content;
+  margin-bottom: 1rem;
+
 }
 
 @mixin flexLayout{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@mixin sectionBaseLayout{
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  height: min-content;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+@mixin sectionHeading{
+  color: $color-heading;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 3rem 0;
+  font-family: $font-heading;
+  font-size: 2rem;
+  background-color: lavenderblush;
+  width: max-content;
+  padding: 5px 10px;
+  font-weight: lighter;
 }
 @mixin footerFlexLayout{
   display: flex;

@@ -1,24 +1,8 @@
 .about {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  padding: 2rem 5rem;
-  //background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
+@include sectionBaseLayout;
 
   &-section-heading {
-    color: $color-heading;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 0 3rem 0;
-    font-family: $font-heading;
-    font-size: 2rem;
-    background-color: lavenderblush;
-    width: max-content;
-    padding: 5px 10px;
-    font-weight: lighter;
+   @include sectionHeading;
   }
   .main-heading{
     @include main-heading;
