@@ -2,10 +2,15 @@ $color-dark: #262626;
 $color-black: #000;
 
 $color-primary: #9A031E;
+$color-secondary:#460B2F;
+$color-ternary: #E36414;
+$color-quatery: #FB8B24;
+
 //$color-primary: #FB8B24;
 //$color-primary: #E36414;
 
-$color-secondary: #bbb;
+//$color-secondary: #bbb;
+
 
 $color-heading: #460B2F;
 $color-bg-heading: lavenderblush;
@@ -22,7 +27,7 @@ $color-menu-product-desc:$color-heading;
 //about
 
 
-//contact-us
+
 
 //buttons' colors
 $color-btn-main: #E36414;
@@ -31,6 +36,12 @@ $color-btn-main-secondary: #262626;
 $color-btn-nav-hover: #460B2F;
 $color-pulse: #FB8B24;
 
+//contact-us
+$color-container-bg: whitesmoke;
+$color-form-bg: $color-bg-heading;
+$color-icons: $color-btn-main;
+$color-input: $color-secondary;
+$color-label: $color-form-bg;
 
 //footer
 $color-footer-heading:$color-white;

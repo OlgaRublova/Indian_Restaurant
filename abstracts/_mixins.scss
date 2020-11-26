@@ -22,11 +22,8 @@
 }
 @mixin sectionBaseLayout{
   position: relative;
-  top: 0;
-  right: 0;
   width: 100vw;
-  height: 100vh;
-  height: min-content;
+  min-height: 100vh;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
