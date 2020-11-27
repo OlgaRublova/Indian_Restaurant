@@ -8,12 +8,14 @@
 
     .card {
       background-color: $color-bg-heading;
-      height: 100%;
+      height: 25rem !important;
       width: 50%;
       color: black;
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
       font-family: $font-heading;
-      @include flexLayout;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
       &__img-wrapper {
         height: 100%;
@@ -27,14 +29,15 @@
       }
 
       &__content {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+        height: 45%;
+        width: max-content;
+
 
         .heading--main {
           color: $color-heading;
           font-size: 1.3rem;
           margin-bottom: 1rem;
+
         }
 
         .heading--sub {
@@ -55,6 +58,7 @@
     .text__heading-main {
       @include sectionHeading;
       margin: 3rem 0 0.5rem 0;
+
     }
   }
 
@@ -69,6 +73,7 @@
 
     &--main {
       @include main-heading;
+      margin-bottom: 0;
 
       &:nth-of-type(2) {
         background-color: $color-primary;

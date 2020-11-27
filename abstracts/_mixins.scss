@@ -27,12 +27,13 @@
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 @mixin sectionHeading{
   color: $color-heading;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 3rem 0;
+  margin: 3rem 0;
   font-family: $font-heading;
   font-size: 2rem;
   background-color: lavenderblush;

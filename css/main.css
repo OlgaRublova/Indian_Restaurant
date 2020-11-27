@@ -82,6 +82,90 @@
   font-size: 1rem;
   line-height: 1rem; }
 
+.slide-wrap {
+  position: relative;
+  top: 0;
+  width: 70vw;
+  height: 50vh;
+  margin: 2rem auto;
+  transition: 300ms;
+  text-align: center; }
+  .slide-wrap .slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .slide-wrap .slideshow .slide-entry {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: 300ms;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      width: 70vw;
+      height: 50vh;
+      width: 100%;
+      height: 100%; }
+      .slide-wrap .slideshow .slide-entry figure {
+        margin: auto; }
+        .slide-wrap .slideshow .slide-entry figure img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70vw;
+          height: 50vh;
+          object-fit: cover;
+          background-position: 0% 0%;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        .slide-wrap .slideshow .slide-entry figure figcaption {
+          position: absolute;
+          top: 10%;
+          left: 0;
+          z-index: 3;
+          height: max-content;
+          width: max-content;
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          text-transform: capitalize;
+          background-color: #000000;
+          color: #fff;
+          background-color: #460B2F;
+          background-color: #9A031E;
+          font-family: "Hind Guntur", sans-serif;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          line-height: 1.2rem; }
+      .slide-wrap .slideshow .slide-entry.active {
+        opacity: 1;
+        visibility: visible; }
+  .slide-wrap .slide-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 17rem;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4rem;
+    list-style: none;
+    padding: 0;
+    z-index: 10000; }
+    .slide-wrap .slide-nav li {
+      cursor: pointer;
+      color: #460B2F;
+      font-size: 3rem; }
+    .slide-wrap .slide-nav li#prev-slide {
+      margin-left: -7%; }
+    .slide-wrap .slide-nav li#next-slide {
+      margin-right: -7%; }
+
 .brand {
   position: absolute;
   top: 0.7rem;
@@ -128,7 +212,7 @@
         color: #460B2F;
         text-transform: uppercase;
         text-align: center;
-        margin: 0 0 3rem 0;
+        margin: 3rem 0;
         font-family: "Hind Guntur", sans-serif;
         font-size: 2rem;
         background-color: lavenderblush;
@@ -395,7 +479,9 @@
   font-family: sans-serif;
   width: max-content;
   margin: 60px 40px 40px 40px;
-  font-size: 1.2rem; }
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: lighter; }
   .nav-list {
     display: flex;
     justify-content: space-around;
@@ -530,12 +616,13 @@
   min-height: 100vh;
   padding: 2rem 5rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0; }
   .about-section-heading {
     color: #460B2F;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 0 3rem 0;
+    margin: 3rem 0;
     font-family: "Hind Guntur", sans-serif;
     font-size: 2rem;
     background-color: lavenderblush;
@@ -575,7 +662,8 @@
   min-height: 100vh;
   padding: 2rem 5rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0; }
   .contact-us__cards {
     display: flex;
     justify-content: space-around;
@@ -584,7 +672,7 @@
     height: 40%; }
     .contact-us__cards .card {
       background-color: lavenderblush;
-      height: 100%;
+      height: 25rem !important;
       width: 50%;
       color: black;
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
@@ -600,9 +688,8 @@
           width: 100%;
           object-fit: cover; }
       .contact-us__cards .card__content {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column; }
+        height: 45%;
+        width: max-content; }
         .contact-us__cards .card__content .heading--main {
           color: #460B2F;
           font-size: 1.3rem;
@@ -619,7 +706,7 @@
       color: #460B2F;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 0 3rem 0;
+      margin: 3rem 0;
       font-family: "Hind Guntur", sans-serif;
       font-size: 2rem;
       background-color: lavenderblush;
@@ -647,9 +734,33 @@
       justify-content: center;
       text-transform: uppercase;
       width: max-content;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      margin-bottom: 0; }
       .contact-us__heading--main:nth-of-type(2) {
         background-color: #9A031E; }
+
+.home {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+  .home__heading {
+    color: #460B2F;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 2rem;
+    background-color: lavenderblush;
+    width: max-content;
+    padding: 5px 10px;
+    font-weight: lighter; }
+  .home__text {
+    font-size: 1.1rem;
+    text-align: justify; }
 
 .menu {
   position: relative;
@@ -658,6 +769,7 @@
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
+  margin: 0;
   font-family: "Hind Guntur", sans-serif;
   height: min-content; }
   .menu__wrapper {
