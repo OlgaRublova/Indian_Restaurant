@@ -7,5 +7,17 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
+}
+
+.divLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  font-family: $font-heading;
+  font-size: 1.5rem;
 }

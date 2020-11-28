@@ -1,11 +1,13 @@
 .home{
   @include sectionBaseLayout;
 
+
   &__heading{
     @include sectionHeading;
   }
   &__text{
     font-size: 1.1rem;
     text-align: justify;
+    width: 100%;
   }
 }

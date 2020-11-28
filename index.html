@@ -18,7 +18,58 @@
     <title>Little India</title>
 </head>
 <body>
+
+<section class="reservation none">
+    <h2 class="reservation__heading">BOOK YOUR TABLE NOW</h2>
+    <div class="reservation__container">
+        <div class="card__img"></div>
+
+        <div class="card__content">
+            <h3>Reservation</h3>
+            <form>
+                <div class="form-row">
+                    <select name="days" id="day">
+                        <option value="day-select">Select Day</option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+
+                    <select name="hours" id="hour">
+                        <option value="hour-select">Select Hour</option>
+                        <option value="10">10: 00</option>
+                        <option value="10">12: 00</option>
+                        <option value="10">14: 00</option>
+                        <option value="10">16: 00</option>
+                        <option value="10">18: 00</option>
+                        <option value="10">20: 00</option>
+                        <option value="10">22: 00</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="personName" placeholder="Full Name">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+
+                <div class="form-row">
+                    <input type="number" id="person" placeholder="How Many Persons?" min="1">
+                    <input type="submit" value="BOOK TABLE" class="book-table">
+                </div>
+            </form>
+        </div>
+        <button class="close-btn">X</button>
+
+    </div>
+</section>
+
+
 <header class="header">
+    <video src="video-bg-1.mp4" class="header__video" autoplay loop muted></video>
     <div class="brand">
         <a href="" class="brand-logo"><img src="images/logo.jpeg" alt=""></a>
     </div>
@@ -35,241 +86,156 @@
         <h1 class="main-heading">Dine-In is open again</h1>
         <h3 class="sub-heading">232 Almond Lane, Calabassas, CA</h3>
         <h3 class="sub-heading">424 000 21 11</h3>
-        <button type="button" class="btn main-btn pulse margin-top-md">Reservation</button>
+        <button type="button" class="btn main-btn pulse margin-top-md" id="reservation">Reservation</button>
     </div>
 </header>
-<div class="home">
+<section class="home">
+    <div class="home__heading">Dine-IN Reservations</div>
+    <p class="home__text">We are now accepting reservations for dine-in! In accordance with city guidelines, we will
+        be seating outdoors at a limited capacity. Masks are required when you arrive, as well as inside the
+        restaurant whenever you’re not seated at your own table. Due to the current circumstances, we are
+        temporarily declining outside food and beverage. Thank you for understanding. Our regular dinner menu is
+        also available for takeout (no minimum required).</p>
+    <div class="home__heading">Our Menu</div>
+    <p class="home__text">Our menu is meant to be a feast that everyone at the table joins. Bavel bridges together
+        fresh ingredients with slow cooking techniques, incorporating aromatic woods, spices, pickling, smoke, and
+        herbs. We serve different versions of flatbreads and spreads, chef’s selection of cured Middle Eastern
+        meats, cold and hot small plates highlighting vegetables, with large format meat and fish dishes. Our
+        desserts take flavors and ingredients found in the Middle East and build on their traditions with a touch of
+        modernity.</p>
+    <div class="home__heading">Photo Gallery</div>
 
-    <section class="home">
-        <div class="home__heading">Dine-IN Reservations</div>
-        <p class="home__text">We are now accepting reservations for dine-in! In accordance with city guidelines, we will
-            be seating outdoors at a limited capacity. Masks are required when you arrive, as well as inside the
-            restaurant whenever you’re not seated at your own table. Due to the current circumstances, we are
-            temporarily declining outside food and beverage. Thank you for understanding. Our regular dinner menu is
-            also available for takeout (no minimum required).</p>
-        <div class="home__heading">Our Menu</div>
-        <p class="home__text">Our menu is meant to be a feast that everyone at the table joins. Bavel bridges together
-            fresh ingredients with slow cooking techniques, incorporating aromatic woods, spices, pickling, smoke, and
-            herbs. We serve different versions of flatbreads and spreads, chef’s selection of cured Middle Eastern
-            meats, cold and hot small plates highlighting vegetables, with large format meat and fish dishes. Our
-            desserts take flavors and ingredients found in the Middle East and build on their traditions with a touch of
-            modernity.</p>
-        <div class="home__heading">Photo Gallery</div>
+    <div class="slide-wrap">
+        <div class="slideshow">
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-1.jpg" alt="">
+                        <figcaption>Chicken Tikka Massala</figcaption>
+                    </figure>
 
-        <div class="slide-wrap">
-            <div class="slideshow">
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-1.jpg" alt="">
-                            <figcaption>Chicken Tikka Massala</figcaption>
-                        </figure>
-
-                    </div>
                 </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-2.jpg" alt="">
-                            <figcaption>Garlic Naan</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-4.jpg" alt="">
-                            <figcaption>Saag Aloo Carry</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-5.jpg" alt="">
-                            <figcaption>Cheese Nan with spices</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-6.jpg" alt="">
-                            <figcaption>Mango Chicken</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-7.jpg" alt="">
-                            <figcaption>Chicken Machani with rice and veggie soup </figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-8.jpg" alt="">
-                            <figcaption>Chicken La-Jawab</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-9.jpg" alt="">
-                            <figcaption>Chicken tandoori</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-10.jpg" alt="">
-                            <figcaption>Beef Vindaloo</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-11.jpg" alt="">
-                            <figcaption>Beef Curry</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-12.jpg" alt="">
-                            <figcaption>Chicken Curry</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-13.jpg" alt="">
-                            <figcaption>Saag Paner</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-14.jpg" alt="">
-                            <figcaption>Chicken Pakova with Veggies</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <figure>
-                            <img src="images/slider-img-16.jpg" alt="">
-                            <figcaption>Beef broccoli</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-
-
-                <ul class="slide-nav">
-                    <li id="prev-slide"><i>«</i></li>
-                    <li id="next-slide"><i>»</i></li>
-                </ul>
-
             </div>
 
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-4.jpg" alt="">
+                        <figcaption>Saag Aloo Carry</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-5.jpg" alt="">
+                        <figcaption>Cheese Nan with spices</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-6.jpg" alt="">
+                        <figcaption>Mango Chicken</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-7.jpg" alt="">
+                        <figcaption>Chicken Machani with rice and veggie soup</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-8.jpg" alt="">
+                        <figcaption>Chicken La-Jawab</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-9.jpg" alt="">
+                        <figcaption>Chicken tandoori</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-10.jpg" alt="">
+                        <figcaption>Beef Vindaloo</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-11.jpg" alt="">
+                        <figcaption>Beef Curry</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-12.jpg" alt="">
+                        <figcaption>Chicken Curry</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-13.jpg" alt="">
+                        <figcaption>Saag Paner</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-14.jpg" alt="">
+                        <figcaption>Chicken Pakova with Veggies</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <div class="slide-entry">
+                <div class="slide-content">
+                    <figure>
+                        <img src="images/slider-img-16.jpg" alt="">
+                        <figcaption>Beef broccoli</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+
+            <ul class="slide-nav">
+                <li id="prev-slide"><i>«</i></li>
+                <li id="next-slide"><i>»</i></li>
+            </ul>
+
         </div>
-    </section>
 
-
-    <!--    <section class="specials">-->
-    <!--        <div class="cards-wrapper">-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <button type="button" class="btn sub-btn">What we do</button>-->
-
-    <!--                </div>-->
-    <!--                <img src="images/specials-img-1.jpeg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <button type="button" class="btn sub-btn">Today's Specials</button>-->
-    <!--                </div>-->
-    <!--                <img src="images/specials-img-2.jpeg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <button type="button" class="btn sub-btn">Full Menu</button>-->
-    <!--                </div>-->
-    <!--                <img src="images/specials-img-3.jpeg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
-    <!--    <section class="gallery">-->
-    <!--        <div class="gallery-heading">-->
-    <!--            <p class="gallery-heading-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam aspernatur autem distinctio exercitationem fuga in iure, maiores nisi perspiciatis qui quidem, sapiente suscipit tenetur ullam velit veniam voluptatem.</p>-->
-    <!--            <h1 class="gallery-heading-main">Are you ready for something new today?</h1>-->
-    <!--        </div>-->
-    <!--        <div class="cards-wrapper">-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Saag Alloo</h1>-->
-    <!--                    <img class="card-overlay-image" src="images/best-choice.png" alt="">-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-1.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Fish Carry Karachi</h1>-->
-    <!--                    <img class="card-overlay-image" src="images/best-choice.png" alt="">-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-2.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Shai Korma Muglai</h1>-->
-    <!--                    <img class="card-overlay-image" src="images/best-choice.png" alt="">-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-3.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Vindaloo Goan</h1>-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-4.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Tandori Chicken and Vegetables</h1>-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-5.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--            <div class="card">-->
-    <!--                <div class="card-overlay">-->
-    <!--                    <h1 class="card-overlay-heading">Royal Korma</h1>-->
-    <!--                </div>-->
-    <!--                <img src="images/gallery-img-6.jpg" alt="" class="card-img">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <button type="button" class="btn main-btn  pulse">Reservation</button>-->
-
-    <!--    </section>-->
-</div>
+    </div>
+</section>
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-content-sm">
@@ -306,6 +272,7 @@
     </div>
 </footer>
 
-<script src="js/slider.js"></script>
+<!--<script src="js/slider.js"></script>-->
+<script src="js/reservation-form.js"></script>
 </body>
 </html>
