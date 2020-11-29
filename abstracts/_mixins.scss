@@ -1,4 +1,4 @@
-@mixin main-heading{
+@mixin main-heading {
   background-color: #460B2F;
   padding: 1rem 2rem;
   color: white;
@@ -12,49 +12,90 @@
   text-transform: uppercase;
   width: max-content;
   margin-bottom: 1rem;
+  @include respond(phone) {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+
+  } ;
+  @include respond(big-desktop) {
+    padding: 2rem;
+    font-size: 3rem;
+    line-height: 1.7rem;
+  };
+
 
 }
 
-@mixin flexLayout{
+@mixin flexLayout {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-@mixin sectionBaseLayout{
+
+@mixin sectionBaseLayout {
   position: relative;
   width: 100vw;
   min-height: 100vh;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  @include respond(phone) {
+    padding: 2rem;
+    height: 100%;
+  }
+;
+  @include respond(tab-port);
+  @include respond(tab-land) {
+    padding: 3rem;
+  }
+;
+  @include respond(big-desktop) {
+    padding: 5rem;
+  }
+;
 }
-@mixin sectionHeading{
+
+@mixin sectionHeading {
   color: $color-heading;
   text-transform: uppercase;
-  text-align: center;
   margin: 3rem 0;
   font-family: $font-heading;
   font-size: 2rem;
   background-color: lavenderblush;
   width: max-content;
-  padding: 5px 10px;
+  padding: 0.5rem;
   font-weight: lighter;
 }
-@mixin footerFlexLayout{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: baseline;
-  height: 100%;
+
+
+
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content
+    };
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content
+    };
+
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content
+    };
+
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content
+    };
+
+  }
 }
 
-@mixin footerHeading{
-  color: $color-footer-heading;
-  text-transform: capitalize;
-}
-@mixin footerText{
-  color: $color-footer-link;
-  font-size: 0.8rem;
-
-}

@@ -1,23 +1,23 @@
 .btn {
-  width: 170px;
-  height: 45px;
+  width: 10.625rem;
+  height: 2.813rem;
   font-family: $font-josefinSans;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   outline: none;
   cursor: pointer;
   transition: all .4s;
   z-index: 3;
-  line-height: 45px;
+  line-height: 0.875rem;
 }
 
 .nav-btn {
-  position: absolute;
-  top: -70px;
-  right: 0;
+  //position: absolute;
+  //top: 0;
+  //right: 0;
   &:hover{
-    background-color: $color-btn-nav-hover;
+    transform: translateY(3px);
   }
 }
 
@@ -25,6 +25,7 @@
   color: $color-btn-main;
   background-color: transparent;
   border: 2px solid $color-btn-main;
+  padding: 1rem;
 
   &:hover {
     background-color: $color-btn-main;
@@ -58,8 +59,8 @@
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625rem;
+  right: 0.625rem;
   z-index: 100;
   height: 2rem;
   width: 2rem;

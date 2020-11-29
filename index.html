@@ -19,6 +19,23 @@
 </head>
 <body>
 
+<!--    <input id="burger" type="checkbox"/>-->
+
+<!--    <label for="burger">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--    </label>-->
+
+<!--    <nav>-->
+<!--        <ul class="nav-list">-->
+<!--            <li class="nav-item nav-item-active"><a href="index.html" class="nav-link">Home</a></li>-->
+<!--            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>-->
+<!--            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>-->
+<!--            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
 <section class="reservation none">
     <h2 class="reservation__heading">BOOK YOUR TABLE NOW</h2>
     <div class="reservation__container">
@@ -41,13 +58,13 @@
 
                     <select name="hours" id="hour">
                         <option value="hour-select">Select Hour</option>
-                        <option value="10">10: 00</option>
-                        <option value="10">12: 00</option>
-                        <option value="10">14: 00</option>
-                        <option value="10">16: 00</option>
-                        <option value="10">18: 00</option>
-                        <option value="10">20: 00</option>
-                        <option value="10">22: 00</option>
+                        <option value="10AM">10: 00</option>
+                        <option value="12PM">12: 00</option>
+                        <option value="2PM">14: 00</option>
+                        <option value="4PM">16: 00</option>
+                        <option value="6PM">18: 00</option>
+                        <option value="8PM">20: 00</option>
+                        <option value="10PM">22: 00</option>
                     </select>
                 </div>
 
@@ -88,6 +105,7 @@
         <h3 class="sub-heading">424 000 21 11</h3>
         <button type="button" class="btn main-btn pulse margin-top-md" id="reservation">Reservation</button>
     </div>
+
 </header>
 <section class="home">
     <div class="home__heading">Dine-IN Reservations</div>
@@ -236,43 +254,40 @@
 
     </div>
 </section>
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-content-sm">
-            <h4 class="footer-content-sm-heading">Follow Us</h4>
-            <ul class="footer-content-sm-icons">
-                <li class="footer-content-sm-icons-item"><a href="#" class="footer-content-sm-icons-link"><i
+<footer>
+    <div class="footer">
+        <div class="footer__box">
+            <h4 class="footer__box__heading">Follow Us</h4>
+            <ul class="footer__box__content">
+                <li class="icon__item"><a href="#" class="icon__link"><i
                         class="fab fa-facebook-square"></i></a></li>
-                <li class="footer-content-sm-icons-item"><a href="#" class="footer-content-sm-icons-link"><i
+                <li class="icon__item"><a href="#" class="icon__link"><i
                         class="fab fa-instagram"></i></a>
                 </li>
-                <li class="footer-content-sm-icons-item"><a href="#" class="footer-content-sm-icons-link"><i
+                <li class="icon__item"><a href="#" class="icon__link"><i
                         class="fab fa-google-plus-square"></i></a></li>
-                <li class="footer-content-sm-icons-item"><a href="#" class="footer-content-sm-icons-link"><i
+                <li class="icon__item"><a href="#" class="icon__link"><i
                         class="fab fa-youtube"></i></a></li>
             </ul>
         </div>
-        <div class="footer-content-contacts">
-            <h4 class="footer-content-contacts__heading">Contact Us</h4>
-            <h5 class="footer-content-contacts__phone">424 000 21 11</h5>
+        <div class="footer__box">
+            <h4 class="footer__box__heading">Contact Us</h4>
+            <h5 class="footer__box__content">424 000 21 11</h5>
         </div>
-        <div class="footer-content-hours">
-            <h4 class="footer-content-hours__heading">Hours</h4>
-            <div>
+        <div class="footer__box">
+            <h4 class="footer__box__heading">Hours</h4>
+            <div class="footer__box__content flex-dir-col">
                 <h5>Monday - Sunday</h5>
                 <h5>4 pm - 10 pm</h5>
             </div>
         </div>
     </div>
-
-    <div class="footer-copyright">
-        <p class="footer-copyright-paragraph">
-            &copy; Copyright. Restaurant "India". All Rights Reserved.
-        </p>
-    </div>
+    <p class="footer__copyright">
+        &copy; Copyright. Restaurant "India". All Rights Reserved.
+    </p>
 </footer>
 
-<!--<script src="js/slider.js"></script>-->
+<script src="js/slider.js"></script>
 <script src="js/reservation-form.js"></script>
 </body>
 </html>

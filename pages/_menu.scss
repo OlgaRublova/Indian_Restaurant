@@ -1,15 +1,31 @@
 .menu {
+
   @include sectionBaseLayout;
   font-family: $font-heading;
-height: min-content;
+
   &__wrapper {
     @include flexLayout;
     width: 100%;
     height: 100%;
+    border: 1px solid blue;
+    padding: 0;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__box {
       width: 47%;
-      //height: 100%;
+      height: 100%;
       background-color: $color-menu-bg;
       display: grid;
       grid-auto-rows: minmax(min-content, 100px);
@@ -17,6 +33,18 @@ height: min-content;
       grid-row-gap: 0.1rem;
       grid-template-columns: repeat(2, 1fr);
       padding: 1rem;
+      @include respond(phone) {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+      }
+      @include respond(tab-port) {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+      }
+      @include respond(tab-land) {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+      }
 
       .product-section {
 
@@ -27,7 +55,8 @@ height: min-content;
           font-size: 1rem;
           line-height: 1rem;
         }
-        &__info{
+
+        &__info {
           display: flex;
           align-items: baseline;
           justify-content: space-between;
@@ -36,24 +65,30 @@ height: min-content;
           color: $color-menu-price;
           margin: 1rem 0 0.5rem 0;
 
-          &__name{
+          &__name {
             font-size: 0.95rem;
           }
-          &__price{
+
+          &__price {
             font-size: 0.95rem;
           }
         }
-        .product-description{
+
+        .product-description {
           font-size: 0.95rem;
         }
 
-        .product-img{
+        .product-img {
           margin-top: 1rem;
           grid-column-start: 2;
           grid-column-end: 2;
           grid-row-start: 7;
           grid-row-end: 9;
-          img{
+          @include respond(tab-land) {
+            display: none;
+          }
+
+          img {
             height: 100%;
             width: 100%;
             object-fit: contain;

@@ -1,77 +1,50 @@
-.footer {
+footer {
   position: relative;
-  top:0;
-  left:0;
-  height: 15vh;
+  min-height: 12vh;
   width: 100vw;
   background-color: $color-footer-bg;
-  @include flexLayout;
-  flex-direction: column;
-  padding: 1rem 0;
+  padding: 2rem 0;
 
-  &-content {
-    @include flexLayout;
-    height: 65%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  .footer {
+    display: flex;
+    justify-content: space-between;
 
-    &-sm {
-    @include footerFlexLayout;
+    &__box {
+      height: 100%;
+      width: 30%;
+      @include flexLayout;
+      flex-direction: column;
 
-
-      &-heading {
-        @include footerHeading;
-        @include flexLayout;
-        flex-direction: column;
+      &__heading{
+        color: $color-ternary;
+        font-size: 1rem;
+        letter-spacing: 1px;
       }
-
-      &-icons {
+      &__content{
         @include flexLayout;
+        justify-content: center;
+        margin: 0.2rem;
+        color: white;
         list-style: none;
+        width: 100%;
 
-        &-item {
-          padding: 0 0.2rem;
+        .icon__item{
+          margin-right: 1rem;
         }
-
-        &-link {
-          color: $color-footer-link;
-
+        .icon__link{
+          color: $color-white;
         }
-      }
-    }
-
-    &-contacts {
-      @include footerFlexLayout;
-
-      &__heading {
-        @include footerHeading;
-      }
-
-      &__phone {
-        @include footerText;
-      }
-    }
-
-    &-hours {
-      @include footerFlexLayout;
-
-      &__heading {
-        @include footerHeading;
-      }
-      div h5{
-        @include footerText;
 
       }
     }
   }
-  &-copyright{
-    &-paragraph{
-      color: $color-footer-heading;
-      font-weight: lighter;
-      font-size: 0.7rem;
-
-    }
+  .footer__copyright{
+    color: $color-footer-heading;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
   }
 }
 
