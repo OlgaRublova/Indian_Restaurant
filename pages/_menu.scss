@@ -1,60 +1,77 @@
 .menu {
-
   @include sectionBaseLayout;
   font-family: $font-heading;
+
 
   &__wrapper {
     @include flexLayout;
     width: 100%;
     height: 100%;
     border: 1px solid blue;
-    padding: 0;
 
     @include respond(phone) {
-      display: flex;
       flex-direction: column;
     }
     @include respond(tab-port) {
-      display: flex;
       flex-direction: column;
     }
     @include respond(tab-land) {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+
     }
 
     &__box {
       width: 47%;
-      height: 100%;
+      height: min-content;
+      //height: auto;
+      //height: 100%;
+
       background-color: $color-menu-bg;
       display: grid;
-      grid-auto-rows: minmax(min-content, 100px);
       grid-column-gap: 2rem;
-      grid-row-gap: 0.1rem;
       grid-template-columns: repeat(2, 1fr);
       padding: 1rem;
+      border: 2px solid #ff2026;
       @include respond(phone) {
         grid-template-columns: 1fr !important;
         width: 100% !important;
+        padding: 0;
+        margin-top: 1rem;
+
       }
       @include respond(tab-port) {
         grid-template-columns: 1fr !important;
         width: 100% !important;
+        margin-top: 1rem;
+
       }
       @include respond(tab-land) {
-        grid-template-columns: 1fr !important;
+        //grid-template-columns: 1fr !important;
         width: 100% !important;
-      }
+        margin-top: 1rem;
 
+      }
+      @include respond(big-desktop){
+        height: 1300px;
+      }
       .product-section {
+        @include respond(phone) {
+          border: 1px solid yellow;
+          font-size: 0.5rem;
+        }
 
         &__heading {
           @include main-heading;
-          margin-bottom: 2rem;
-          margin-top: 0;
-          font-size: 1rem;
-          line-height: 1rem;
+          border: 1px solid yellow;
+
+
+          @include respond(big-desktop) {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+
+          }
         }
+
 
         &__info {
           display: flex;
@@ -93,10 +110,8 @@
             width: 100%;
             object-fit: contain;
           }
-
         }
       }
-
 
     }
   }

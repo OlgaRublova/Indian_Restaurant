@@ -6,13 +6,21 @@
 
   display: flex;
   justify-content: space-between;
-  //align-items: center;
-
   overflow: hidden;
-
   background: linear-gradient(rgba($color-dark, 0.5), rgba($color-dark, 0.5));
 
-
+  & > button {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin-right: 3rem;
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
 
   &__video {
     position: absolute;
@@ -25,27 +33,13 @@
     z-index: 1;
 
 
-    @include respond(phone){
-    height: 100%;
+    @include respond(phone) {
+      height: 100%;
     }
-
-    @include respond(tab-port){
-      //height:100%;
-
-    }
-    @include respond(tab-land){
-      //width:100%;
-    }
-
-    @include respond(big-desktop) {
-      background-color: red;
-      //height: 100%;
-    }
-
   }
 
   &__img {
-   position: absolute;
+    position: absolute;
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -72,6 +66,15 @@
     height: 12.5rem;
     padding: 1.25rem;
 
+    @include respond(phone) {
+      top: 42%;
+    }
+    @include respond(tab-port) {
+      top: 42%;
+    }
+    @include respond(tab-land) {
+    top: 60%;
+    }
   }
 
   .sub-heading {
@@ -84,7 +87,37 @@
 
   .main-heading {
     @include main-heading;
-
-
   }
+
+  @include respond(phone) {
+    .toggle {
+      position: relative;
+      height: 3rem;
+      width: 3rem;
+      margin: 3rem;
+      background: url("../images/menu.png") no-repeat center;
+      cursor: pointer;
+      z-index: 10;
+
+      &.active {
+        background: url('../images/close.png') no-repeat center;
+      }
+    }
+  }
+  @include respond(tab-port) {
+    .toggle {
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      margin: 3rem;
+      background: url("../images/menu.png") no-repeat center;
+      cursor: pointer;
+      z-index: 10000000;
+
+      &.active {
+        background: url('../images/close.png') no-repeat center;
+      }
+    }
+  }
+
 }

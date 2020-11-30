@@ -5,34 +5,21 @@
   width: 6.87rem;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid crimson;
   margin: 3rem;
-
-
   filter: sepia(60%);
   @include respond(phone){
-
-    //margin: 0 !important;
-    //height: 3.87rem !important;
-    //width: 3.87rem !important;
+    height: 3rem;
+    width: 3rem;
   }
   @include respond(tab-port){
-    //left: 1rem;
-    //margin: 1rem;
-    //height: 5.87rem;
-    //width: 5.87rem;
+    height: 4rem;
+    width: 4rem;
   }
   @include respond(tab-land){
-    //left: 3rem;
-    //margin: 2.5rem;
-    //height: 6.87rem;
-    //width: 6.87rem;
+
   }
   @include respond(big-desktop){
-    //left: 5rem;
-    //margin: 3.5rem;
-    //height: 7.87rem;
-    //width: 7.87rem;
+
   }
 
   &-logo {
